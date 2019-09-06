@@ -1,16 +1,6 @@
 # OSS-101
 A gentle introduction to open source software development via C programming. This is best classified as a collection of resources and not a full-fledged course/tutorial :p.
 
-### Editor
-You may use any source-code editor you are comfortable with. Some popular options are:
-* [vim](https://www.vim.org)
-* [emacs](https://www.gnu.org/software/emacs/)
-* [Visual Studio Code](https://code.visualstudio.com)
-* [Sublime Text](https://www.sublimetext.com)
-
-### Git
-Download [git](https://git-scm.com/downloads) and configure for your [first use](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup).
-
 ## 6-week Course Outline Session 1
 ### Week 1: Writing and compiling C programs
 * Introduction
