@@ -17,3 +17,49 @@
  *
  *	   [1] https://git-scm.com/docs/git-format-patch
  */
+ 
+#include  <stdio.h>
+#include  <stdlib.h>
+
+int main(void)
+{
+    //Question 1
+    int x = 5, y = 7;
+    
+    printf("x = %d and y = %d\n", x, y);
+    swapFunction(&x, &y);
+    printf("x = %d and y = %d\n", x, y);
+    
+    //Question 2
+    const char *tempStr = "hello";
+    
+    returnStrlen(tempStr);
+    printf( "\nString = %s, and length = %d.\n", tempStr, returnStrlen(tempStr) );
+    
+    //Question 3
+    char crt = 'A', *chrptr = &crt;
+       
+    printf("Value = %c, Address = %d, Size = %d\n", crt, &crt, sizeof(crt));
+    printf("Value = %d, Address = %d, Size = %d\n", chrptr, &chrptr, sizeof(chrptr));
+        
+    return 0;
+}
+
+void swapFunction(int *one, int *two)
+{
+    int temp = *one;
+    *one = *two;
+    *two = temp;   
+}
+
+int returnStrlen(char *string)
+{
+    char* indx = (char *) malloc(sizeof(string));  
+    indx = string;
+    
+    while(*indx != '\0')
+        ++indx;
+    
+    return indx-string;
+}
+
